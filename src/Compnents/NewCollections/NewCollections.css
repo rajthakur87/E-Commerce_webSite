@@ -1,0 +1,53 @@
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.new-collections h1 {
+    color: #171717;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 40px; 
+}
+
+.new-collections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.collections {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 50px;
+    gap: 40px;
+}
+
+/* Add transition for smooth animation */
+.collections > div {
+    flex: 1 1 calc(25% - 40px); /* Adjust to fit 4 items with gap */
+    max-width: calc(25% - 40px); /* Ensure max width is consistent */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+    padding: 8px; /* Reduced padding for smaller item size */
+}
+
+.collections > div img {
+    width: 100%; /* Maintain full width for images */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+/* Hover effect */
+.collections > div:hover {
+    transform: scale(1.05); /* Slightly larger zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.collections > div:hover img {
+    transform: scale(1.1); /* Larger zoom for image on hover */
+}
