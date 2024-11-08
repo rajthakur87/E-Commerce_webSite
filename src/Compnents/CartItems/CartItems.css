@@ -98,3 +98,14 @@ cursor: pointer;
     height: 50px;
     
 }
+.cartitems-promobox button{
+    width: 140px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: black;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
